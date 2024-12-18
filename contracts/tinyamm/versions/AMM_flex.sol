@@ -56,8 +56,7 @@ contract AMM {
                 (amount0, amount1) = (amount0_optimal, amount1_optimal);
             
             liquidity = (amount0 * supply) / r0;
-
-            // require(r0 * x1 == r1 * x0, "Dep precondition"); TODO use as prop (false)
+            }
         }
         else {
             amount0 = amount0_desired;
